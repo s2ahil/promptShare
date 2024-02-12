@@ -20,6 +20,9 @@ export const connectToDB= async ()=>{
             useNewUrlParser: true,  // <== add this option to get a helpful error
             useUnifiedTopology: true // <== add this option to get a helpful error on
         })
+
+                isConnected = true;
+        console.log('Mongodb connected');
     }
     catch(error){
         console.log(error)
