@@ -7,7 +7,6 @@ export async function POST (request) {
 
     const { userId, prompt, tag } = await request.json();
 
-    // console.log("yaha aya madarchod",userId)
     try {
         await connectToDB();
 
